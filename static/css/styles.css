@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #162025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.janela_central {
+    background-color: #1c272e;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+h1 {
+    text-align: center;
+    color: #f6f6f6;
+    margin-bottom: 20px;
+}
+
+.mensagens {
+    list-style: none;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #152423;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/static/images/fundo.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.mensagem {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.enviada {
+    color: #f6f6f6;
+    background-color: #054741;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.recebida {
+    color: #f6f6f6;
+    background-color: #222e36;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.message-text {
+    display: block;
+    margin-bottom: 5px;
+    padding-right: 35px;
+}
+
+.timestamp {
+    font-size: 0.5em;
+    color: #dddddd;
+    text-align: right;
+    display: block;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    color: #f6f6f6;
+    background-color: #101d24;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form input[type="text"]:focus {
+    border-color: #054741;
+}
+
+form button {
+    background-color: #054741;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #023632;
+}
+
+
+.vassouras_logo{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 220px;
+}

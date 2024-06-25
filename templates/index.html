@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vassouras Chat</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="janela_central">
+        <ul id='messages' class="mensagens">
+        </ul>
+        <form action="" onsubmit="sendMessage(event)">
+            <input type="text" id="messageText" autocomplete="off" placeholder="Digite uma mensagem" required/>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <img src="/static/images/logo_vassouras.png" alt="vassouras_logo" class="vassouras_logo">
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
